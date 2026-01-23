@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Bridge Monitoring</title>
+</head>
+
+<body>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Kesehatan Jembatan</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <!--========== HEADER ==========
+                        <li class="nav__item"><a href="#about" class="nav__link">Tentang</a></li> -->
+                    <!--========== kalo mau nyalain hapus aja yg ijo2 ini ==========-->
+                    <li class="nav__item"><a href="#services" class="nav__link">Sensor</a></li>
+                    <li class="nav__item"><a href="#menu" class="nav__link">My Team</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Kontak Kami</a></li>
+
+                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--========== HOME ==========-->
+        <section class="home" id="home">
+            <div class="home__container bd-container bd-grid">
+                <div class="home__data">
+                    <h1 class="home__title">Monitoring kesehatan jembatan</h1>
+                    <h2 class="home__subtitle">Berbasis <br> Internet Of Things.</h2>
+                    <a href="#about" class="button">Next</a>
+                </div>
+
+                <img src="assets/img/bridgeHome.png" alt="" class="home__img">
+            </div>
+        </section>
+
+        <!--========== ABOUT ==========
+            <section class="about section bd-container" id="about">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <span class="section-subtitle about__initial">Tentang</span>
+                        <h2 class="section-title about__initial">Pengukuran <br> Jembatan berbasis IOT</h2>
+                        <p class="about__description">Jembatan merupakan struktur yang dibuat untuk menyeberangi jurang atau 
+                            rintangan seperti sungai, rel kereta api ataupun jalan raya..</p>
+                        <a href="#services" class="button">Next</a>
+                    </div>
+
+                    <img src="assets/img/gab2.png" alt="" class="about__img">
+                </div>
+            </section>
+--> <!--========== kalo mau nyalain lagi hapus aja yg ijo ini ==========-->
+        <!--========== SERVICES ==========-->
+        <section class="services section bd-container" id="services">
+            <span class="section-subtitle">Live Sensor</span>
+            <h2 class="section-title">Tampilan Data Grafik Sensor Secara Realtime</h2>
+
+            <div class="services__container bd-grid">
+                <div class="services__content">
+                    <iframe width="470" height="280" style="border: 5px solid #cccccc;"
+                        src="https://thingspeak.com/apps/matlab_visualizations/523322"></iframe>
+                    <br />source: <a href='https://thingspeak.com/channels/2226418'>thingspeak.com</a>
+
+                    <h3 class="services__title">Accelometer</h3>
+                    <p class="services__description"></p>
+                </div>
+
+                <div class="services__content">
+                    <iframe width="470" height="280" style="border: 5px solid #cccccc;"
+                        src="https://thingspeak.com/channels/2226418/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+                    <br />source: <a href='https://thingspeak.com/channels/2226418'>thingspeak.com</a>
+
+                    <h3 class="services__title">Temperature</h3>
+                    <p class="services__description"></p>
+                </div>
+            </div>
+
+            <div class="services__container bd-grid">
+                <div class="services__content">
+                    <iframe width="470" height="280" style="border: 5px solid #cccccc;"
+                        src="https://thingspeak.com/channels/2226418/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+                    <br />source: <a href='https://thingspeak.com/channels/2226418'>thingspeak.com</a>
+
+                    <h3 class="services__title">Humidity</h3>
+                    <p class="services__description"></p>
+                </div>
+
+                <div class="services__content">
+                    <iframe width="470" height="280" style="border: 5px solid #cccccc;"
+                        src="https://thingspeak.com/channels/2226418/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Accelerometer+Y-Axis&type=spline&update=15&xaxis=Time%2F5s&yaxis=g"></iframe>
+                    <br />source: <a href='https://thingspeak.com/channels/2226418'>thingspeak.com</a>
+
+                    <h3 class="services__title">Accelometer Y-Axis</h3>
+                    <p class="services__description"></p>
+                </div>
+            </div>
+        </section>
+
+
+        <!--========== TEAM ==========-->
+        <section class="menu section bd-container" id="menu">
+            <span class="section-subtitle">Mahasiswa Telkom University</span>
+            <h2 class="section-title">Capstone Design 2023 </h2>
+
+            <div class="menu__container bd-grid">
+                <div class="menu__content">
+                    <img src="assets/img/1.jpg" alt="" class="menu__img">
+                    <h3 class="menu__name">Mikhael Prausdian Arruan Wijaya </h3>
+                    <span class="menu__detail">1103192200</span>
+                    <span class="menu__preci">Software</span>
+                    <a href="#" class="button menu__button"><i class='bx bx-smile'></i></a>
+                </div>
+
+                <div class="menu__content">
+                    <img src="assets/img/2.jpg" alt="" class="menu__img">
+                    <h3 class="menu__name">Faris Alim Mirzani</h3>
+                    <span class="menu__detail">1103193163</span>
+                    <span class="menu__preci">Hardware</span>
+                    <a href="#" class="button menu__button"><i class='bx bx-smile'></i></a>
+                </div>
+
+                <div class="menu__content">
+                    <img src="assets/img/3.jpg" alt="" class="menu__img">
+                    <h3 class="menu__name">Ihza Aulia Syakir</h3>
+                    <span class="menu__detail">1103194153</span>
+                    <span class="menu__preci">Programer Arduino</span>
+                    <a href="#contact" class="button menu__button"><i class='bx bx-smile'></i></a>
+                </div>
+            </div>
+        </section>
+
+
+        <!--========== CONTACT US ==========-->
+        <section class="contact section bd-container" id="contact">
+            <div class="contact__container bd-grid">
+                <div class="contact__data">
+                    <span class="section-subtitle contact__initial">Let's talk</span>
+                    <h2 class="section-title contact__initial">Contact us</h2>
+                    <p class="contact__description">Perancangan IOT</p>
+                </div>
+
+                <div class="contact__button">
+                    <a href="#" class="button">Contact us now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer section bd-container">
+        <div class="footer__container bd-grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">Monitoring Kesehatan Jembatan</a>
+                <span class="footer__description">Berbasis IOT</span>
+                <div>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Services</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Internet Of Things</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Information</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Terms of services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Adress</h3>
+                <ul>
+                    <li>Bandung - Buah Batu</li>
+                    <li>Telkom University</li>
+                    <li>Capstone Design 2023</li>
+                    <li>@student.telkomuniversity.ac.id</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; 2023 Mahasiswa Telkom. Capstone Design 2023</p>
+    </footer>
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
